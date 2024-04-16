@@ -1,115 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 1</title>
-    <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <a class="navbar-brand" style="color: white">Interface</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="create.html">Create</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="info.html">Information</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="aboutus.html">About Us</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
 
-    <div class="container mt-4">
-      <h1>About Us</h1>
-      <p>
-        Welcome to our website! We are a team dedicated to providing the best
-        service and experience to our users.
-      </p>
+    .container {
+      padding-top: 60px;
+    }
+    h1, h2, h3 {
+      color: #000000;
+    }
+    p, ul {
+      color: #6c757d;
+    }
+    section {
+      margin-bottom: 40px;
+    }
+    .team-member {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .team-member img {
+      border-radius: 50%;
+      max-width: 200px;
+    }
+  </style>
+</head>
+<body>
 
-      <!-- Mission Statement -->
-      <section id="mission">
-        <h2>Our Mission</h2>
-        <p>
-          To empower individuals and organizations by providing top-notch
-          solutions and services.
-        </p>
-      </section>
-
-      <!-- History -->
-      <section id="history">
-        <h2>Our History</h2>
-        <p>
-          Founded in 2010, we have grown from a small startup to a leading
-          player in our industry.
-        </p>
-      </section>
-
-      <!-- Team Members -->
-      <section id="team">
-        <h2>Meet the Team</h2>
-        <div class="row">
-          <!-- Team Member 1 -->
-          <div class="col-md-4">
-            <h3>Jane Doe</h3>
-            <p>CEO & Founder</p>
-          </div>
-          <!-- Team Member 2 -->
-          <div class="col-md-4">
-            <h3>John Smith</h3>
-            <p>CTO</p>
-          </div>
-          <!-- Team Member 3 -->
-          <div class="col-md-4">
-            <h3>Alice Johnson</h3>
-            <p>Lead Designer</p>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact Information -->
-      <section id="contact">
-        <h2>Contact Us</h2>
-        <p>
-          If you have any questions or would like to get in touch, please
-          contact us:
-        </p>
-        <ul>
-          <li>Email: contact@example.com</li>
-          <li>Phone: +123 456 7890</li>
-          <li>Address: 123 Business Rd, Business City, BC 12345</li>
-        </ul>
-      </section>
+  <!-- Navbar (Unchanged) -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" style="color: white">Shopify Rebellion</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="create.html">Create</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="info.html">Information</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutus.html">About Us</a>
+        </li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+  <div class="container">
+    <h1 class="text-center">About Us</h1>
+    <p class="lead text-center">Welcome to our website! We are a team dedicated to providing the best service and experience to our users.</p>
+
+    <!-- Mission Statement -->
+    <section id="mission">
+      <h2>Our Mission</h2>
+      <p>To empower individuals and organizations by providing top-notch solutions and services.</p>
+    </section>
+
+    <!-- History -->
+    <section id="history">
+      <h2>Our History</h2>
+      <p>Founded in 2010, we have grown from a small startup to a leading player in our industry.</p>
+    </section>
+
+    <!-- Team Members -->
+    <section id="team">
+      <h2 class="text-center mb-4">Meet the Team</h2>
+      <div class="row">
+        <!-- Team Member 1 -->
+        <div class="col-md-4 team-member">
+          <img src="https://th.bing.com/th/id/OIP.tGdSq9bToLMS4rnMhZWtDgHaHa?rs=1&pid=ImgDetMain" alt="Jane Doe">
+          <h3>Mubeen</h3>
+          <p>CEO & Founder</p>
+        </div>
+        <!-- Team Member 2 -->
+        <div class="col-md-4 team-member">
+          <img src="https://th.bing.com/th/id/OIP.tGdSq9bToLMS4rnMhZWtDgHaHa?rs=1&pid=ImgDetMain" alt="John Smith">
+          <h3>Faizan</h3>
+          <p>CTO</p>
+        </div>
+        <!-- Team Member 3 -->
+        <div class="col-md-4 team-member">
+          <img src="https://th.bing.com/th/id/OIP.tGdSq9bToLMS4rnMhZWtDgHaHa?rs=1&pid=ImgDetMain" alt="Alice Johnson">
+          <h3>Huzaifa</h3>
+          <p>Lead Designer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>If you have any questions or would like to get in touch, please contact us:</p>
+      <ul>
+        <li>Email: contact@example.com</li>
+        <li>Phone: +123 456 7890</li>
+        <li>Address: 123 Business Rd, Business City, BC 12345</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
 </html>
